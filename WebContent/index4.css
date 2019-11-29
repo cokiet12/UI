@@ -7,9 +7,11 @@ div {height: calc(100vh / 3);}
 #gb1 {background-color: red;}
 #gb2 {background-color: yellow;}
 #gb3 {background-color: blue;}
-.w15 {width: 15vw;}
-.div {
-	height: 100vh;
-	float: left;
+@media only screen and (max-width: 600px) {
+	.w15 {width: 15vw;}
+	.div {
+		height: 100vh;
+		float: left;
+	}
+	.gb2 {width: calc(100vw - 30vw);}
 }
-.gb2 {width: calc(100vw - 30vw);}
