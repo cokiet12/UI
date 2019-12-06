@@ -1,0 +1,13 @@
+@charset "UTF-8";
+body {margin: 0;}
+.input {
+	width: 100%;
+	border: 0;
+	background-color: #d5fdd0;
+	padding: 10px 0;
+}
+.submit {
+	width: 100%;
+	padding: 10px 0;
+	cursor: pointer;
+}

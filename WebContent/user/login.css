@@ -1,0 +1,17 @@
+@charset "UTF-8";
+h1 {
+	text-align: center;
+}
+input {
+	width: 100%;
+	margin: 5px 0;
+}
+.text {
+	border: 0;
+	background-color: #ffc1ff;
+	padding: 10px 0;	
+}
+.submit {
+	padding: 10px 0;
+	cursor: pointer;
+}

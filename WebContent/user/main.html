@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>main</title>
+<link rel="stylesheet" href="main.css">
+<script type="text/javascript">
+
+	var id = "gd";
+	var pw = "1122";
+
+	var a = location.search;
+	if(a != "") {
+		var b = a.substring(1);
+		var c = b.split("&");
+		
+		for(var i = 0; i < c.length; i++){
+			console.log(c[i]);
+		}
+		
+		var data = {};
+		for(var i = 0; i < c.length; i++){
+		    var d = c[i].split("=");
+		    var key = d[0];
+		    var value = d[1];
+		    console.log(key, value);
+		    data[key] = value;
+		}
+		
+		if(data.id == id) {
+		    if(data.pw == pw){
+		         alert("환영합니다.");
+		    } else {
+		        location.href = "login.html";
+		    }
+		} else {
+		    location.href = "login.html";
+		}
+	} else {
+		location.href = "login.html";
+	}
+
+</script>
+</head>
+<body>
+	<h1>Main</h1>
+	<button type="button" onclick="location.href = 'login.html';">로그아웃</button>
+</body>
+</html>
